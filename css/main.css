@@ -1723,6 +1723,10 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
   }
 
+  .nav__logo-img {
+    height: 44px;
+  }
+
   .about__inner {
     grid-template-columns: 1fr;
     padding: 0 var(--space-5);
