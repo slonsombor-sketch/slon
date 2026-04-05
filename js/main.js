@@ -365,4 +365,18 @@
   updateNav();
   updateActiveLink();
 
+  // ============================================================
+  // Back to top button
+  // ============================================================
+  const backToTop = document.getElementById('backToTop');
+  if (backToTop) {
+    window.addEventListener('scroll', function () {
+      backToTop.classList.toggle('back-to-top--visible', window.scrollY > 400);
+    }, { passive: true });
+
+    backToTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
 })();
