@@ -1727,6 +1727,14 @@ h1, h2, h3, h4, h5, h6 {
     height: 44px;
   }
 
+  .nav__social {
+    display: none;
+  }
+
+  .nav__inner {
+    padding-inline: var(--space-4);
+  }
+
   .about__inner {
     grid-template-columns: 1fr;
     padding: 0 var(--space-5);
