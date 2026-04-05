@@ -1794,12 +1794,26 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .hero__title-circle {
-    width: 75vw;
-    height: 75vw;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%);
-    padding: var(--space-5);
+    width: 45vw;
+    height: 45vw;
+    left: var(--space-4);
+    top: 40%;
+    transform: translateY(-50%);
+    padding: var(--space-4);
+    gap: var(--space-2);
+    margin-bottom: var(--space-7);
+  }
+
+  .hero__title-circle .hero__location {
+    font-size: clamp(0.4rem, 1.8vw, 0.6rem);
+  }
+
+  .hero__title-circle .hero__title {
+    font-size: clamp(1.5rem, 8vw, 2rem);
+  }
+
+  .hero__title-circle .hero__tagline {
+    font-size: clamp(0.7rem, 2.5vw, 1rem);
   }
 
   .hero__hours {
