@@ -352,8 +352,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav__logo-img {
-  height: 44px;
+  height: 66px;
   width: auto;
+  filter: brightness(0) invert(1);
 }
 
 .nav__logo-text {
@@ -609,17 +610,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: var(--text-hero);
   font-weight: 300;
   color: var(--color-white);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: var(--space-4);
 }
 
 .hero__title strong {
-  font-weight: 800;
+  font-weight: 300;
   display: block;
 }
 
