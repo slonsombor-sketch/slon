@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slon Étterem — A Nagy-Bácska Csatorna partján, Zombor</title>
+  <meta name="description" content="Restaurant Slon in Sombor — a unique gastronomic experience on the banks of the Great Bačka Canal. Grill specialties, fish dishes, international cuisine. Open 09:00–24:00.">
+
+  <link rel="alternate" hreflang="sr" href="index.html">
+  <link rel="alternate" hreflang="hu" href="hu.html">
+  <link rel="alternate" hreflang="de" href="de.html">
+  <link rel="alternate" hreflang="hu" href="hu.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Restoran Slon",
+    "address": {
+      "@type": "PostalCím",
+      "streetCím": "Venac Petrove Gore bb",
+      "addressLocality": "Sombor",
+      "postalCode": "25000",
+      "addressCountry": "RS"
+    },
+    "telephone": "+381254804444",
+    "openingHours": "Mo-Su 09:00-24:00",
+    "servesCuisine": ["Serbian", "Grill", "Fish", "International"]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="nav nav--transparent" id="nav">
+    <div class="nav__inner">
+      <a href="hu.html" class="nav__logo" aria-label="Slon Étterem — Főoldal">
+        <img src="images/logo/slon-logo.png" alt="Slon logo" class="nav__logo-img" onerror="this.style.display='none'">
+        <span class="nav__logo-text">Slon</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#about" class="nav__link">Rólunk</a></li>
+        <li><a href="#menu" class="nav__link">Menu</a></li>
+        <li><a href="#gallery" class="nav__link">Galéria</a></li>
+        <li><a href="#reservations" class="nav__link">Foglalások</a></li>
+        <li><a href="#contact" class="nav__link">Kapcsolat</a></li>
+      </ul>
+      <div class="nav__right">
+        <div class="lang-switcher">
+          <a href="index.html" class="lang-btn">SR</a>
+          <a href="hu.html" class="lang-btn active" aria-current="page">HU</a>
+          <a href="de.html" class="lang-btn">DE</a>
+          <a href="hu.html" class="lang-btn">HU</a>
+        </div>
+        <div class="nav__social">
+          <a href="https://www.instagram.com/restoranslonsombor" class="nav__social-link" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menü megnyitása" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="mobile-menu">
+    <a href="#about" class="nav__mobile-link">Rólunk</a>
+    <a href="#menu" class="nav__mobile-link">Menu</a>
+    <a href="#gallery" class="nav__mobile-link">Galéria</a>
+    <a href="#reservations" class="nav__mobile-link">Foglalások</a>
+    <a href="#contact" class="nav__mobile-link">Kapcsolat</a>
+    <div class="nav__mobile-lang">
+      <a href="index.html" class="lang-btn">SR</a>
+      <a href="hu.html" class="lang-btn active">EN</a>
+      <a href="de.html" class="lang-btn">DE</a>
+      <a href="hu.html" class="lang-btn">HU</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" id="hero-bg"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__overlay-bottom" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__location">Venac Petrove Gore bb &bull; Sombor, Serbia</p>
+        <h1 class="hero__title">
+          Restaurant
+          <strong>Slon</strong>
+        </h1>
+        <p class="hero__tagline">A Nagy-Bácska Csatorna partján</p>
+        <div class="hero__ctas btn-group">
+          <a href="#reservations" class="btn btn--primary">Asztalt Foglaljon</a>
+          <a href="menu-hu.html" class="btn btn--ghost">Étlap</a>
+        </div>
+      </div>
+      <div class="hero__hours" aria-label="Opening hours">
+        <span class="hero__hours-dot"></span>
+        Nyitva: H–V &nbsp;09:00–24:00
+      </div>
+      <div class="hero__scroll" id="hero-scroll" aria-hidden="true">
+        <svg class="hero__scroll-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M10 4v12M5 11l5 5 5-5"/>
+        </svg>
+        <span>Görgessen</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="about__inner">
+        <div class="about__text">
+          <div class="about__rule" data-animate></div>
+          <span class="section-label" data-animate data-animate-delay="100">A Mi Történetünk</span>
+          <h2 class="section-title" data-animate data-animate-delay="200">
+            Ahol a folyó<br><strong>találkozik az ízekkel</strong>
+          </h2>
+          <p class="about__body" data-animate data-animate-delay="300">
+            Restaurant Slon is set on the banks of the Great Bačka Canal, nestled in nature. For decades, guests have traveled from Sombor and across the region to enjoy the unique combination of natural surroundings and exceptional gastronomy.
+          </p>
+          <p class="about__body" data-animate data-animate-delay="400">
+            Our kitchen offers a wide selection of national and international specialties — from traditional Serbian grill and fish dishes to à la carte delicacies. Every dish is prepared with care, using only the freshest ingredients.
+          </p>
+          <p class="about__body" data-animate data-animate-delay="500">
+            Our legendary <em>Slonovača</em> — a house specialty passed down through generations — is the reason many guests keep coming back.
+          </p>
+          <a href="#reservations" class="btn btn--outline" data-animate data-animate-delay="500">Asztalt Foglaljon</a>
+        </div>
+        <div class="about__image" data-animate="fade-right">
+          <img src="images/restaurant/terasa.jpg" alt="Restaurant Slon terrace on the canal" class="about__img" loading="lazy" width="560" height="560">
+        </div>
+      </div>
+    </section>
+
+    <!-- SLONOVAČA -->
+    <section class="signature" id="signature">
+      <div class="signature__image" data-animate="scale">
+        <img src="images/food/slonovaca.jpg" alt="Slonovača — house specialty" class="signature__img" loading="lazy" width="700" height="600">
+      </div>
+      <div class="signature__content">
+        <span class="section-label section-label--gold" data-animate>A Ház Specialitása</span>
+        <div class="signature__rule" data-animate data-animate-delay="100"></div>
+        <h2 class="signature__title" data-animate data-animate-delay="200">Slonovača</h2>
+        <p class="signature__body" data-animate data-animate-delay="300">
+          Our legendary dish passed down through generations. Carefully selected ingredients, a secret marinade and slow cooking create a flavor you will never forget. Slonovača is the reason guests always return.
+        </p>
+        <p class="signature__body" data-animate data-animate-delay="400">
+          Available every day — but we recommend a reservation, as it runs out.
+        </p>
+        <a href="menu-en.html#specijaliteti" class="btn btn--gold" data-animate data-animate-delay="500">Tudjon Meg Többet</a>
+      </div>
+    </section>
+
+    <!-- MENU PREVIEW -->
+    <section class="menu-preview section" id="menu">
+      <div class="container">
+        <div class="menu-preview__header">
+          <span class="section-label" data-animate>Konyhánk</span>
+          <h2 class="section-title" data-animate data-animate-delay="100">Our <strong>Menu</strong></h2>
+          <p class="menu-preview__subtitle" data-animate data-animate-delay="200">Grill &bull; Fish &bull; Starters &bull; International Cuisine</p>
+        </div>
+        <div class="menu-preview__grid">
+          <article class="menu-card" data-animate data-animate-delay="100">
+            <div class="menu-card__image"><img src="images/food/steak.jpg" alt="Grill specialties" class="menu-card__img" loading="lazy" width="400" height="200"></div>
+            <div class="menu-card__body">
+              <p class="menu-card__category">Grill</p>
+              <h3 class="menu-card__name">Grill Specialties</h3>
+              <ul class="menu-card__items">
+                <li class="menu-card__item"><span class="menu-card__item-name">Steak</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">from 950 RSD</span></li>
+                <li class="menu-card__item"><span class="menu-card__item-name">Pork Knuckle</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">from 850 RSD</span></li>
+                <li class="menu-card__item"><span class="menu-card__item-name">Veal Chop</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">from 900 RSD</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="menu-card" data-animate data-animate-delay="200">
+            <div class="menu-card__image"><img src="images/food/fish-paprikash.jpg" alt="Fish specialties" class="menu-card__img" loading="lazy" width="400" height="200"></div>
+            <div class="menu-card__body">
+              <p class="menu-card__category">Fish</p>
+              <h3 class="menu-card__name">Fish Specialties</h3>
+              <ul class="menu-card__items">
+                <li class="menu-card__item"><span class="menu-card__item-name">Fish Paprikash</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">from 750 RSD</span></li>
+                <li class="menu-card__item"><span class="menu-card__item-name">Baked Carp</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">from 680 RSD</span></li>
+                <li class="menu-card__item"><span class="menu-card__item-name">Grilled Fish Mix</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">from 820 RSD</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="menu-card" data-animate data-animate-delay="300">
+            <div class="menu-card__image"><img src="images/food/predjelo.jpg" alt="Starters" class="menu-card__img" loading="lazy" width="400" height="200"></div>
+            <div class="menu-card__body">
+              <p class="menu-card__category">Starters</p>
+              <h3 class="menu-card__name">Starters & Soups</h3>
+              <ul class="menu-card__items">
+                <li class="menu-card__item"><span class="menu-card__item-name">Mixed Starters</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">from 580 RSD</span></li>
+                <li class="menu-card__item"><span class="menu-card__item-name">Veal Broth</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">from 280 RSD</span></li>
+                <li class="menu-card__item"><span class="menu-card__item-name">Fish Broth</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">from 320 RSD</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="menu-card" data-animate data-animate-delay="100">
+            <div class="menu-card__image"><img src="images/food/salate.jpg" alt="Salads" class="menu-card__img" loading="lazy" width="400" height="200"></div>
+            <div class="menu-card__body">
+              <p class="menu-card__category">Salads</p>
+              <h3 class="menu-card__name">Salads & Sides</h3>
+              <ul class="menu-card__items">
+                <li class="menu-card__item"><span class="menu-card__item-name">Shopska Salad</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">280 RSD</span></li>
+                <li class="menu-card__item"><span class="menu-card__item-name">Seasonal Salad</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">220 RSD</span></li>
+                <li class="menu-card__item"><span class="menu-card__item-name">French Fries</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">180 RSD</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="menu-card" data-animate data-animate-delay="200">
+            <div class="menu-card__image"><img src="images/food/desert.jpg" alt="Desserts" class="menu-card__img" loading="lazy" width="400" height="200"></div>
+            <div class="menu-card__body">
+              <p class="menu-card__category">Desserts</p>
+              <h3 class="menu-card__name">Sweet Finish</h3>
+              <ul class="menu-card__items">
+                <li class="menu-card__item"><span class="menu-card__item-name">Crêpes with Jam</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">220 RSD</span></li>
+                <li class="menu-card__item"><span class="menu-card__item-name">Ice Cream</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">200 RSD</span></li>
+                <li class="menu-card__item"><span class="menu-card__item-name">Vanilla Dessert</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">280 RSD</span></li>
+              </ul>
+            </div>
+          </article>
+          <article class="menu-card" data-animate data-animate-delay="300">
+            <div class="menu-card__image"><img src="images/restaurant/sala.jpg" alt="Bar and Drinks" class="menu-card__img" loading="lazy" width="400" height="200"></div>
+            <div class="menu-card__body">
+              <p class="menu-card__category">Drinks</p>
+              <h3 class="menu-card__name">Bar & Wine List</h3>
+              <ul class="menu-card__items">
+                <li class="menu-card__item"><span class="menu-card__item-name">Local Wine</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">from 350 RSD</span></li>
+                <li class="menu-card__item"><span class="menu-card__item-name">Beer</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">from 180 RSD</span></li>
+                <li class="menu-card__item"><span class="menu-card__item-name">Cocktails</span><span class="menu-card__item-dots"></span><span class="menu-card__item-price">from 450 RSD</span></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <div class="menu-preview__cta" data-animate>
+          <a href="menu-hu.html" class="btn btn--primary">Teljes Étlap</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <div class="gallery__header">
+          <span class="section-label" data-animate>Hangulat</span>
+          <h2 class="section-title" data-animate data-animate-delay="100">Érezze a <strong>Slont</strong></h2>
+        </div>
+        <div class="gallery__grid">
+          <div class="gallery__item gallery__item--tall" data-animate><img src="images/restaurant/terasa.jpg" alt="Terrace" class="gallery__img" loading="lazy" width="400" height="480" data-lightbox="0"><div class="gallery__overlay"><svg class="gallery__overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg></div></div>
+          <div class="gallery__item" data-animate data-animate-delay="100"><img src="images/food/fish-paprikash.jpg" alt="Fish Paprikash" class="gallery__img" loading="lazy" width="400" height="240" data-lightbox="1"><div class="gallery__overlay"><svg class="gallery__overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg></div></div>
+          <div class="gallery__item" data-animate data-animate-delay="200"><img src="images/food/steak.jpg" alt="Grilled steak" class="gallery__img" loading="lazy" width="400" height="240" data-lightbox="2"><div class="gallery__overlay"><svg class="gallery__overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg></div></div>
+          <div class="gallery__item gallery__item--wide" data-animate data-animate-delay="100"><img src="images/hero/hero-canal.jpg" alt="The Great Bačka Canal" class="gallery__img" loading="lazy" width="800" height="240" data-lightbox="3"><div class="gallery__overlay"><svg class="gallery__overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg></div></div>
+          <div class="gallery__item" data-animate data-animate-delay="200"><img src="images/food/slonovaca.jpg" alt="Slonovača" class="gallery__img" loading="lazy" width="400" height="240" data-lightbox="4"><div class="gallery__overlay"><svg class="gallery__overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg></div></div>
+          <div class="gallery__item gallery__item--tall" data-animate data-animate-delay="300"><img src="images/restaurant/sala.jpg" alt="Restaurant interior" class="gallery__img" loading="lazy" width="400" height="480" data-lightbox="5"><div class="gallery__overlay"><svg class="gallery__overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg></div></div>
+          <div class="gallery__item" data-animate data-animate-delay="100"><img src="images/food/paprikas.jpg" alt="Paprikash" class="gallery__img" loading="lazy" width="400" height="240" data-lightbox="6"><div class="gallery__overlay"><svg class="gallery__overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg></div></div>
+          <div class="gallery__item" data-animate data-animate-delay="200"><img src="images/food/salate.jpg" alt="Fresh salads" class="gallery__img" loading="lazy" width="400" height="240" data-lightbox="7"><div class="gallery__overlay"><svg class="gallery__overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg></div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox"><button class="lightbox__close" id="lightbox-close">&#x2715;</button><button class="lightbox__prev" id="lightbox-prev">&#x2190;</button><img class="lightbox__img" id="lightbox-img" src="" alt=""><button class="lightbox__next" id="lightbox-next">&#x2192;</button></div>
+
+    <!-- RESERVATIONS -->
+    <section class="reservations section" id="reservations">
+      <div class="reservations__inner container">
+        <div class="reservations__image">
+          <img src="images/restaurant/terasa.jpg" alt="Restaurant terrace" class="reservations__img" loading="lazy" width="600" height="560">
+          <div class="reservations__overlay"></div>
+          <div class="reservations__image-text">
+            <p class="reservations__image-title">Reserve<br>your table</p>
+            <p class="reservations__image-sub">Mon–Sun &bull; 09:00–24:00</p>
+          </div>
+        </div>
+        <div class="reservations__form-wrap">
+          <h2 class="reservations__form-title">Online Foglalás</h2>
+          <p class="reservations__form-sub">Töltse ki az űrlapot, és megerősítjük foglalását.</p>
+          <form class="form" id="reservation-form" action="https://formspree.io/f/restoranslon" method="POST" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="name">Teljes Név *</label>
+                <input type="text" id="name" name="name" class="form__input" placeholder="Az Ön neve" required autocomplete="name">
+                <span class="form__error" id="name-error">Kérjük, adja meg a nevét.</span>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" class="form__input" placeholder="+381 6x xxx xxxx" required autocomplete="tel">
+                <span class="form__error" id="phone-error">Kérjük, adja meg a telefonszámát.</span>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="date">Date *</label>
+                <input type="date" id="date" name="date" class="form__input" required>
+                <span class="form__error" id="date-error">Kérjük, válasszon dátumot.</span>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="time">Time *</label>
+                <select id="time" name="time" class="form__select" required>
+                  <option value="">— Időpont választás —</option>
+                  <option>09:00</option><option>09:30</option><option>10:00</option><option>10:30</option>
+                  <option>11:00</option><option>11:30</option><option>12:00</option><option>12:30</option>
+                  <option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option>
+                  <option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option>
+                  <option>17:00</option><option>17:30</option><option>18:00</option><option>18:30</option>
+                  <option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option>
+                  <option>21:00</option><option>21:30</option><option>22:00</option><option>22:30</option><option>23:00</option>
+                </select>
+                <span class="form__error" id="time-error">Kérjük, válasszon időpontot.</span>
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label">Vendégek Száma *</label>
+              <div class="form__stepper">
+                <button type="button" class="stepper__btn" id="guests-minus">−</button>
+                <input type="number" class="stepper__value" id="guests" name="guests" value="2" min="1" max="20" readonly>
+                <button type="button" class="stepper__btn" id="guests-plus">+</button>
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="note">Megjegyzés</label>
+              <textarea id="note" name="note" class="form__textarea" placeholder="Különleges kérések, allergiák, alkalom..." rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary form__submit">Asztalt Foglaljon</button>
+          </form>
+          <div class="form__success" id="form-success">
+            <div class="form__success-icon">✓</div>
+            <h3 class="form__success-title">Foglalás megérkezett!</h3>
+            <p class="form__success-text">Hamarosan felvesszük Önnel a kapcsolatot a megerősítés érdekében.</p>
+          </div>
+          <div class="reservations__phones">
+            <p>Vagy hívjon minket közvetlenül</p>
+            <div class="reservations__phones-links">
+              <a href="tel:+38125480444" class="phone-link">+381 25 480 444</a>
+              <a href="tel:+381652482444" class="phone-link">+381 65 248 2444</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact__header">
+          <span class="section-label" data-animate>Találjon Meg Minket</span>
+          <h2 class="section-title" data-animate data-animate-delay="100">Kapcsolat Kapcsolat &amp; <strong>Location</strong>amp; <strong>Helyszín</strong></h2>
+        </div>
+        <div class="contact__grid">
+          <div class="contact__card" data-animate>
+            <div class="contact__icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+            <h3 class="contact__card-title">Cím</h3>
+            <address class="contact__card-text" style="font-style:normal;">Venac Petrove Gore bb<br>25000 Sombor, Serbia<br><br><a href="https://maps.google.com/?q=Restoran+Slon+Sombor" target="_blank" rel="noopener">Térkép megtekintése →</a></address>
+          </div>
+          <div class="contact__card" data-animate data-animate-delay="100">
+            <div class="contact__icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+            <h3 class="contact__card-title">Telefon & E-mail</h3>
+            <div class="contact__card-text"><a href="tel:+38125480444">+381 25 480 444</a><br><a href="tel:+381652482444">+381 65 248 2444</a><br><br><a href="mailto:restoranslon@gmail.com">restoranslon@gmail.com</a></div>
+          </div>
+          <div class="contact__card" data-animate data-animate-delay="200">
+            <div class="contact__icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg></div>
+            <h3 class="contact__card-title">Nyitvatartás</h3>
+            <div class="contact__card-text">Hétfő – Vasárnap<br><strong>09:00 – 24:00</strong><br><br><a href="https://www.instagram.com/restoranslonsombor" target="_blank" rel="noopener">Instagram</a> &bull; <a href="https://www.facebook.com/restoranslonsombor" target="_blank" rel="noopener">Facebook</a></div>
+          </div>
+        </div>
+        <div class="contact__map" data-animate>
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=19.10%2C45.77%2C19.12%2C45.79&layer=mapnik&marker=45.7796%2C19.1132" title="Restaurant Slon location" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <svg class="footer__wave" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#1A1008"/></svg>
+    <div class="footer__inner">
+      <a href="hu.html" class="footer__logo"><span class="footer__logo-text">Slon</span></a>
+      <nav class="footer__nav">
+        <a href="#about" class="footer__link">Rólunk</a>
+        <a href="menu-hu.html" class="footer__link">Menu</a>
+        <a href="#gallery" class="footer__link">Galéria</a>
+        <a href="#reservations" class="footer__link">Foglalások</a>
+        <a href="#contact" class="footer__link">Kapcsolat</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/restoranslonsombor" class="footer__social-link" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+      </div>
+      <div class="footer__lang">
+        <a href="index.html" class="lang-btn">SR</a>
+        <a href="hu.html" class="lang-btn active">EN</a>
+        <a href="de.html" class="lang-btn">DE</a>
+        <a href="hu.html" class="lang-btn">HU</a>
+      </div>
+      <div class="footer__divider"></div>
+      <p class="footer__copy">&copy; 2025 Restoran Slon. Minden jog fenntartva. &bull; Sombor, Serbia</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

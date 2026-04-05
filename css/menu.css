@@ -1,0 +1,511 @@
+/* ============================================================
+   RESTORAN SLON — menu.css
+   Specifični stilovi za stranicu menija
+   ============================================================ */
+
+/* ============================================================
+   MENU HERO (50vh)
+   ============================================================ */
+.menu-hero {
+  position: relative;
+  height: 50vh;
+  min-height: 360px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: var(--space-8);
+  overflow: hidden;
+  margin-top: var(--nav-height);
+}
+
+.menu-hero__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/restaurant/sala.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  z-index: 0;
+}
+
+.menu-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(26, 16, 8, 0.85) 0%,
+    rgba(26, 16, 8, 0.35) 60%,
+    rgba(26, 16, 8, 0.15) 100%
+  );
+  z-index: 1;
+}
+
+.menu-hero__content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: var(--space-5);
+}
+
+.menu-hero__breadcrumb {
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-3);
+}
+
+.menu-hero__breadcrumb a {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color var(--dur-fast);
+}
+
+.menu-hero__breadcrumb a:hover {
+  color: var(--color-white);
+}
+
+.menu-hero__title {
+  font-size: var(--text-3xl);
+  font-weight: 300;
+  color: var(--color-white);
+  letter-spacing: 0.06em;
+  margin-bottom: var(--space-2);
+}
+
+.menu-hero__sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: var(--text-base);
+}
+
+/* ============================================================
+   MENU LAYOUT
+   ============================================================ */
+.menu-page {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 0;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: var(--space-8) var(--space-5);
+  align-items: start;
+}
+
+/* ============================================================
+   SIDEBAR — kategorije
+   ============================================================ */
+.menu-sidebar {
+  position: sticky;
+  top: calc(var(--nav-height) + var(--space-5));
+  padding-right: var(--space-6);
+}
+
+.menu-sidebar__title {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.menu-sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.menu-sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 10px var(--space-3);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-earth-warm);
+  transition: all var(--dur-fast);
+  cursor: pointer;
+}
+
+.menu-sidebar__link:hover {
+  color: var(--color-brand);
+  background-color: var(--color-brand-muted);
+}
+
+.menu-sidebar__link.active {
+  color: var(--color-brand);
+  background-color: var(--color-brand-muted);
+  font-weight: 600;
+}
+
+.menu-sidebar__link-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-brand-muted);
+  flex-shrink: 0;
+  transition: background-color var(--dur-fast);
+}
+
+.menu-sidebar__link.active .menu-sidebar__link-dot,
+.menu-sidebar__link:hover .menu-sidebar__link-dot {
+  background-color: var(--color-brand);
+}
+
+/* Print & lang buttons in sidebar */
+.menu-sidebar__extras {
+  margin-top: var(--space-6);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.menu-sidebar__btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 8px var(--space-3);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  border-radius: var(--radius-sm);
+  transition: all var(--dur-fast);
+  text-decoration: none;
+}
+
+.menu-sidebar__btn:hover {
+  color: var(--color-brand);
+  background-color: var(--color-brand-muted);
+}
+
+.menu-sidebar__btn svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+/* ============================================================
+   MOBILE TABS (zamena za sidebar na mobilnom)
+   ============================================================ */
+.menu-tabs {
+  display: none;
+  overflow-x: auto;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-5);
+  background-color: var(--color-surface-paper);
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 10;
+  border-bottom: 1px solid var(--color-border);
+  scrollbar-width: none;
+}
+
+.menu-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-tab {
+  white-space: nowrap;
+  padding: 7px 14px;
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  background-color: transparent;
+  border: 1.5px solid var(--color-border);
+  transition: all var(--dur-fast);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.menu-tab:hover,
+.menu-tab.active {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  color: var(--color-white);
+}
+
+/* ============================================================
+   MENU CONTENT
+   ============================================================ */
+.menu-content {
+  min-width: 0;
+}
+
+/* Sekcija kategorije */
+.menu-category {
+  margin-bottom: var(--space-10);
+  scroll-margin-top: calc(var(--nav-height) + var(--space-5));
+}
+
+.menu-category__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-4);
+  border-bottom: 2px solid var(--color-brand-muted);
+}
+
+.menu-category__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-brand-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 20px;
+}
+
+.menu-category__title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.menu-category__subtitle {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  letter-spacing: 0.06em;
+  margin-top: 2px;
+}
+
+/* Grid stavki */
+.menu-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.menu-items--single {
+  grid-template-columns: 1fr;
+}
+
+/* Stavka menija */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: var(--space-4) var(--space-5);
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  transition: box-shadow var(--dur-fast), border-color var(--dur-fast);
+  gap: var(--space-4);
+}
+
+.menu-item:hover {
+  box-shadow: var(--shadow-card);
+  border-color: var(--color-brand-muted);
+}
+
+.menu-item--featured {
+  border-color: var(--color-gold);
+  background-color: #FFFDF5;
+}
+
+.menu-item__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.menu-item__name {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 2px;
+}
+
+.menu-item__desc {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.menu-item__badge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  background-color: rgba(201, 168, 76, 0.12);
+  padding: 2px 7px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+.menu-item__price {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-brand);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* SLONOVAČA callout */
+.menu-slonovaca {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: var(--space-8);
+  box-shadow: var(--shadow-hover);
+}
+
+.menu-slonovaca__image {
+  position: relative;
+  min-height: 280px;
+}
+
+.menu-slonovaca__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-slonovaca__content {
+  background-color: var(--color-surface-dark);
+  padding: var(--space-7) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-slonovaca__badge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--space-3);
+}
+
+.menu-slonovaca__title {
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  color: var(--color-white);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-3);
+}
+
+.menu-slonovaca__desc {
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+}
+
+.menu-slonovaca__price {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-gold);
+}
+
+/* ============================================================
+   PRINT STYLES
+   ============================================================ */
+@media print {
+  .nav,
+  .menu-hero,
+  .menu-sidebar,
+  .menu-tabs,
+  .footer,
+  .menu-sidebar__extras {
+    display: none !important;
+  }
+
+  .menu-page {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .menu-content {
+    padding: 0;
+  }
+
+  body {
+    background: white;
+    color: black;
+    font-size: 11pt;
+  }
+
+  .menu-category {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .menu-item {
+    border: 1px solid #ccc;
+    break-inside: avoid;
+  }
+
+  .menu-slonovaca {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-slonovaca__image {
+    display: none;
+  }
+
+  .menu-slonovaca__content {
+    background: #f5f5f5;
+    color: black;
+    padding: 16pt;
+  }
+
+  .menu-slonovaca__title,
+  .menu-slonovaca__desc,
+  .menu-slonovaca__price {
+    color: black;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .menu-page {
+    grid-template-columns: 1fr;
+    padding-top: 0;
+  }
+
+  .menu-sidebar {
+    display: none;
+  }
+
+  .menu-tabs {
+    display: flex;
+  }
+
+  .menu-slonovaca {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-slonovaca__image {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .menu-items {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-hero {
+    height: 40vh;
+    min-height: 280px;
+  }
+}

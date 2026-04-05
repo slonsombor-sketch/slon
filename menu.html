@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meni — Restoran Slon, Sombor</title>
+  <meta name="description" content="Kompletan meni Restorana Slon — roštilj, riba, predjela, salate, deserti i pića. Sombor, Venac Petrove Gore bb.">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="sr" href="menu.html">
+  <link rel="alternate" hreflang="en" href="menu-en.html">
+  <link rel="alternate" hreflang="de" href="menu-de.html">
+  <link rel="alternate" hreflang="hu" href="menu-hu.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+
+  <!-- NAV (identična kao index.html) -->
+  <nav class="nav nav--scrolled" id="nav" role="navigation" aria-label="Glavna navigacija">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Restoran Slon — Početna">
+        <img src="images/logo/slon-logo.png" alt="Slon logo" class="nav__logo-img" onerror="this.style.display='none'">
+        <span class="nav__logo-text">Slon</span>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="index.html#o-nama" class="nav__link">O Nama</a></li>
+        <li><a href="menu.html" class="nav__link active">Meni</a></li>
+        <li><a href="index.html#galerija" class="nav__link">Galerija</a></li>
+        <li><a href="index.html#rezervacije" class="nav__link">Rezervacije</a></li>
+        <li><a href="index.html#kontakt" class="nav__link">Kontakt</a></li>
+      </ul>
+
+      <div class="nav__right">
+        <div class="lang-switcher">
+          <a href="menu.html" class="lang-btn active">SR</a>
+          <a href="menu-en.html" class="lang-btn">EN</a>
+          <a href="menu-de.html" class="lang-btn">DE</a>
+          <a href="menu-hu.html" class="lang-btn">HU</a>
+        </div>
+        <div class="nav__social">
+          <a href="https://www.instagram.com/restoranslonsombor" class="nav__social-link" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+        <button class="nav__hamburger" id="hamburger" aria-label="Otvori meni" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="nav__mobile" id="mobile-menu" role="dialog" aria-modal="true">
+    <a href="index.html#o-nama" class="nav__mobile-link">O Nama</a>
+    <a href="menu.html" class="nav__mobile-link">Meni</a>
+    <a href="index.html#galerija" class="nav__mobile-link">Galerija</a>
+    <a href="index.html#rezervacije" class="nav__mobile-link">Rezervacije</a>
+    <a href="index.html#kontakt" class="nav__mobile-link">Kontakt</a>
+    <div class="nav__mobile-lang">
+      <a href="menu.html" class="lang-btn active">SR</a>
+      <a href="menu-en.html" class="lang-btn">EN</a>
+      <a href="menu-de.html" class="lang-btn">DE</a>
+      <a href="menu-hu.html" class="lang-btn">HU</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <header class="menu-hero">
+      <div class="menu-hero__bg" role="img" aria-label="Restoran Slon enterijer"></div>
+      <div class="menu-hero__overlay" aria-hidden="true"></div>
+      <div class="menu-hero__content">
+        <p class="menu-hero__breadcrumb">
+          <a href="index.html">Početna</a> &rsaquo; Meni
+        </p>
+        <h1 class="menu-hero__title">Naš Meni</h1>
+        <p class="menu-hero__sub">Roštilj &bull; Riba &bull; Internacionalna kuhinja</p>
+      </div>
+    </header>
+
+    <!-- Mobile tabs -->
+    <div class="menu-tabs" id="menu-tabs" role="tablist" aria-label="Kategorije menija">
+      <button class="menu-tab active" data-target="dorucak" role="tab">Doručak</button>
+      <button class="menu-tab" data-target="deciji" role="tab">Dečiji</button>
+      <button class="menu-tab" data-target="predjela" role="tab">Predjela</button>
+      <button class="menu-tab" data-target="po-narudzbini" role="tab">A la Carte</button>
+      <button class="menu-tab" data-target="riba" role="tab">Riba</button>
+      <button class="menu-tab" data-target="specijaliteti" role="tab">Specijaliteti</button>
+      <button class="menu-tab" data-target="rostilj" role="tab">Roštilj</button>
+      <button class="menu-tab" data-target="extra" role="tab">Extra</button>
+      <button class="menu-tab" data-target="salate" role="tab">Salate</button>
+      <button class="menu-tab" data-target="deserti" role="tab">Deserti</button>
+      <button class="menu-tab" data-target="pica" role="tab">Pića</button>
+      <button class="menu-tab" data-target="vina" role="tab">Vina</button>
+    </div>
+
+    <!-- Layout: sidebar + content -->
+    <div class="menu-page">
+
+      <!-- SIDEBAR -->
+      <aside class="menu-sidebar" aria-label="Kategorije menija">
+        <p class="menu-sidebar__title">Kategorije</p>
+        <nav class="menu-sidebar__nav">
+          <a class="menu-sidebar__link active" href="#dorucak" data-target="dorucak">
+            <span class="menu-sidebar__link-dot" aria-hidden="true"></span>
+            Doručak
+          </a>
+          <a class="menu-sidebar__link" href="#deciji" data-target="deciji">
+            <span class="menu-sidebar__link-dot" aria-hidden="true"></span>
+            Dečiji Jelovnik
+          </a>
+          <a class="menu-sidebar__link" href="#predjela" data-target="predjela">
+            <span class="menu-sidebar__link-dot" aria-hidden="true"></span>
+            Predjela
+          </a>
+          <a class="menu-sidebar__link" href="#po-narudzbini" data-target="po-narudzbini">
+            <span class="menu-sidebar__link-dot" aria-hidden="true"></span>
+            Specijaliteti A la Carte
+          </a>
+          <a class="menu-sidebar__link" href="#riba" data-target="riba">
+            <span class="menu-sidebar__link-dot" aria-hidden="true"></span>
+            Riblji Specijaliteti
+          </a>
+          <a class="menu-sidebar__link" href="#specijaliteti" data-target="specijaliteti">
+            <span class="menu-sidebar__link-dot" aria-hidden="true"></span>
+            ★ Specijaliteti Kuće
+          </a>
+          <a class="menu-sidebar__link" href="#rostilj" data-target="rostilj">
+            <span class="menu-sidebar__link-dot" aria-hidden="true"></span>
+            Roštilj
+          </a>
+          <a class="menu-sidebar__link" href="#extra" data-target="extra">
+            <span class="menu-sidebar__link-dot" aria-hidden="true"></span>
+            Extra Specijaliteti
+          </a>
+          <a class="menu-sidebar__link" href="#salate" data-target="salate">
+            <span class="menu-sidebar__link-dot" aria-hidden="true"></span>
+            Salate i Prilozi
+          </a>
+          <a class="menu-sidebar__link" href="#deserti" data-target="deserti">
+            <span class="menu-sidebar__link-dot" aria-hidden="true"></span>
+            Deserti
+          </a>
+          <a class="menu-sidebar__link" href="#pica" data-target="pica">
+            <span class="menu-sidebar__link-dot" aria-hidden="true"></span>
+            Karta Pića
+          </a>
+          <a class="menu-sidebar__link" href="#vina" data-target="vina">
+            <span class="menu-sidebar__link-dot" aria-hidden="true"></span>
+            Vinska Lista
+          </a>
+        </nav>
+
+        <div class="menu-sidebar__extras">
+          <button class="menu-sidebar__btn" onclick="window.print()" aria-label="Štampaj meni">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+            Štampaj Meni
+          </button>
+          <a href="index.html#rezervacije" class="menu-sidebar__btn" aria-label="Rezerviši sto">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+            Rezerviši Sto
+          </a>
+        </div>
+      </aside>
+
+      <!-- MENU CONTENT -->
+      <div class="menu-content" id="menu-content">
+
+        <!-- SLONOVAČA callout (na vrhu) -->
+        <div class="menu-slonovaca" id="specijalitet-callout">
+          <div class="menu-slonovaca__image">
+            <img
+              src="images/food/slonovaca.jpg"
+              alt="Slonovača — specijalitet kuće"
+              class="menu-slonovaca__img"
+              loading="lazy"
+              width="600"
+              height="400"
+            >
+          </div>
+          <div class="menu-slonovaca__content">
+            <p class="menu-slonovaca__badge">★ Specijalitet Kuće</p>
+            <h2 class="menu-slonovaca__title">Slonovača</h2>
+            <p class="menu-slonovaca__desc">
+              Mala pljeskavica, 5 ćevapa, sveži vrat, žica ražnjića, kobasica, 5 uštipaka, mala punjena pljeskavica i slanina + pomfrit.
+            </p>
+            <p class="menu-slonovaca__price">3.000 din</p>
+          </div>
+        </div>
+
+        <!-- DORUČAK -->
+        <section class="menu-category" id="dorucak" aria-labelledby="dorucak-title">
+          <div class="menu-category__header">
+            <div class="menu-category__icon" aria-hidden="true">🍳</div>
+            <div>
+              <h2 class="menu-category__title" id="dorucak-title">Doručak</h2>
+              <p class="menu-category__subtitle">Tradicionalni doručak na obali kanala, baš kao nekada</p>
+            </div>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Jaja sa Slaninom</p>
+              </div>
+              <span class="menu-item__price">450 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Jaja sa Slaninom — pola porcije</p>
+              </div>
+              <span class="menu-item__price">380 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Jaja sa Šunkom</p>
+              </div>
+              <span class="menu-item__price">570 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Jaja sa Šunkom — pola porcije</p>
+              </div>
+              <span class="menu-item__price">490 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Kranjska Domaća</p>
+              </div>
+              <span class="menu-item__price">610 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Kranjska Domaća — pola porcije</p>
+              </div>
+              <span class="menu-item__price">500 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Omlet sa Povrćem</p>
+              </div>
+              <span class="menu-item__price">450 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Omlet sa Sirom</p>
+              </div>
+              <span class="menu-item__price">450 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Omlet sa Šunkom</p>
+              </div>
+              <span class="menu-item__price">570 din</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- DEČIJI JELOVNIK -->
+        <section class="menu-category" id="deciji" aria-labelledby="deciji-title">
+          <div class="menu-category__header">
+            <div class="menu-category__icon" aria-hidden="true">🧒</div>
+            <div>
+              <h2 class="menu-category__title" id="deciji-title">Dečiji Jelovnik</h2>
+              <p class="menu-category__subtitle">Porcije prilagođene za decu — boju tanjira biraju deca!</p>
+            </div>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Chicken Nuggets</p>
+              </div>
+              <span class="menu-item__price">700 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Pljeskavica</p>
+              </div>
+              <span class="menu-item__price">850 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Pohovani Kačkavalj</p>
+              </div>
+              <span class="menu-item__price">900 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Uštipci</p>
+              </div>
+              <span class="menu-item__price">850 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ražnjić</p>
+              </div>
+              <span class="menu-item__price">850 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ćevapi</p>
+              </div>
+              <span class="menu-item__price">660 din</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- PREDJELA -->
+        <section class="menu-category" id="predjela" aria-labelledby="predjela-title">
+          <div class="menu-category__header">
+            <div class="menu-category__icon" aria-hidden="true">🥗</div>
+            <div>
+              <h2 class="menu-category__title" id="predjela-title">Predjela</h2>
+              <p class="menu-category__subtitle">Ukusi tradicije u svakom zalogaju</p>
+            </div>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Marinirana Riba</p>
+                <p class="menu-item__desc">Hladno predjelo</p>
+              </div>
+              <span class="menu-item__price">800 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Koziji Sir</p>
+                <p class="menu-item__desc">U maslinovom ulju</p>
+              </div>
+              <span class="menu-item__price">720 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Dimljeni Sirevi — Tvrdi Sir</p>
+              </div>
+              <span class="menu-item__price">700 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Goveđa Pršuta</p>
+                <p class="menu-item__desc">Suvo dimljena</p>
+              </div>
+              <span class="menu-item__price">800 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Svinjska Pršuta</p>
+                <p class="menu-item__desc">Suvo dimljena</p>
+              </div>
+              <span class="menu-item__price">750 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Svinjski Kulen</p>
+                <p class="menu-item__desc">Suvo dimljeni pikant</p>
+              </div>
+              <span class="menu-item__price">750 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Pohovani Sir</p>
+                <p class="menu-item__desc">Toplo predjelo — u prezli i začinima</p>
+              </div>
+              <span class="menu-item__price">760 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Punjena Šljiva</p>
+                <p class="menu-item__desc">U panceti (dimljenoj slanini)</p>
+              </div>
+              <span class="menu-item__price">650 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Koziji Sir — tvrdi i meki</p>
+                <p class="menu-item__desc">Toplo predjelo</p>
+              </div>
+              <span class="menu-item__price">620 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Supa od Smuđa</p>
+                <p class="menu-item__desc">Autentični riblji specijalitet</p>
+              </div>
+              <span class="menu-item__price">470 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Krem Čorba</p>
+                <p class="menu-item__desc">Od povrća i pilećeg mesa</p>
+              </div>
+              <span class="menu-item__price">470 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Supa sa Knedlama</p>
+                <p class="menu-item__desc">Domaća tradicionalna</p>
+              </div>
+              <span class="menu-item__price">470 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ragu Čorba</p>
+                <p class="menu-item__desc">Klasični specijalitet</p>
+              </div>
+              <span class="menu-item__price">450 din</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- A LA CARTE / PO NARUDŽBINI -->
+        <section class="menu-category" id="po-narudzbini" aria-labelledby="narudzbina-title">
+          <div class="menu-category__header">
+            <div class="menu-category__icon" aria-hidden="true">👨‍🍳</div>
+            <div>
+              <h2 class="menu-category__title" id="narudzbina-title">Specijaliteti A la Carte</h2>
+              <p class="menu-category__subtitle">Jedinstveni ukusi tradicije u svakom zalogaju</p>
+            </div>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item menu-item--featured">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Karađorđeva Šnicla</p>
+                <span class="menu-item__badge">Preporučujemo</span>
+              </div>
+              <span class="menu-item__price">1.500 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Karađorđeva Šnicla — 1/2 porcije</p>
+              </div>
+              <span class="menu-item__price">1.000 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Bečka Šnicla</p>
+              </div>
+              <span class="menu-item__price">1.220 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Bečka Šnicla — 1/2 porcije</p>
+              </div>
+              <span class="menu-item__price">900 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Natur Šnicla</p>
+              </div>
+              <span class="menu-item__price">1.220 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Natur Šnicla — 1/2 porcije</p>
+              </div>
+              <span class="menu-item__price">900 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Pariska Šnicla</p>
+              </div>
+              <span class="menu-item__price">1.220 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Pariska Šnicla — 1/2 porcije</p>
+              </div>
+              <span class="menu-item__price">900 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Cordon Blue</p>
+              </div>
+              <span class="menu-item__price">1.500 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Cordon Blue — 1/2 porcije</p>
+              </div>
+              <span class="menu-item__price">1.050 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Medaljoni sa Gljivama</p>
+              </div>
+              <span class="menu-item__price">1.380 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Svinjski File Punjeni</p>
+                <p class="menu-item__desc">Rolovan u slanini</p>
+              </div>
+              <span class="menu-item__price">1.500 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Vegetarijanski Tanjir</p>
+              </div>
+              <span class="menu-item__price">900 din</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- RIBLJI SPECIJALITETI -->
+        <section class="menu-category" id="riba" aria-labelledby="riba-title">
+          <div class="menu-category__header">
+            <div class="menu-category__icon" aria-hidden="true">🐟</div>
+            <div>
+              <h2 class="menu-category__title" id="riba-title">Riblji Specijaliteti</h2>
+              <p class="menu-category__subtitle">Sveža rečna riba — cene po kilogramu</p>
+            </div>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item menu-item--featured">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Riblji Paprikaš od Šarana</p>
+                <p class="menu-item__desc">Sa domaćim testom</p>
+                <span class="menu-item__badge">Preporučujemo</span>
+              </div>
+              <span class="menu-item__price">1.650 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">File Pastrmke</p>
+                <p class="menu-item__desc">Cena po kg</p>
+              </div>
+              <span class="menu-item__price">4.600 din/kg</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Smuđ Prženi Kotlet</p>
+                <p class="menu-item__desc">Cena po kg</p>
+              </div>
+              <span class="menu-item__price">4.600 din/kg</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">File Smuđa u Slanini</p>
+                <p class="menu-item__desc">Cena po kg</p>
+              </div>
+              <span class="menu-item__price">4.700 din/kg</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Šaran Prženi Kotlet</p>
+                <p class="menu-item__desc">Cena po kg</p>
+              </div>
+              <span class="menu-item__price">3.900 din/kg</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Smuđ na Alaški Način</p>
+                <p class="menu-item__desc">Cena po kg</p>
+              </div>
+              <span class="menu-item__price">4.400 din/kg</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Kečiga</p>
+                <p class="menu-item__desc">Cena po kg</p>
+              </div>
+              <span class="menu-item__price">5.000 din/kg</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Pastrmka</p>
+                <p class="menu-item__desc">Cena po kg</p>
+              </div>
+              <span class="menu-item__price">3.900 din/kg</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- SPECIJALITETI KUĆE -->
+        <section class="menu-category" id="specijaliteti" aria-labelledby="specijaliteti-title">
+          <div class="menu-category__header">
+            <div class="menu-category__icon" aria-hidden="true">⭐</div>
+            <div>
+              <h2 class="menu-category__title" id="specijaliteti-title">Specijaliteti Kuće</h2>
+              <p class="menu-category__subtitle">Sa ljubavlju pripremljeni baš za vas</p>
+            </div>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item menu-item--featured">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Teleća Šnicla u Saftu</p>
+                <span class="menu-item__badge">Preporučujemo</span>
+              </div>
+              <span class="menu-item__price">2.150 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Kolenica u Sosu</p>
+              </div>
+              <span class="menu-item__price">1.700 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Kolenica u Panceti</p>
+                <p class="menu-item__desc">U panceti (dimljenoj slanini)</p>
+              </div>
+              <span class="menu-item__price">1.700 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Juneći Delikates u Saftu</p>
+                <p class="menu-item__desc">Cena po kg</p>
+              </div>
+              <span class="menu-item__price">4.800 din/kg</span>
+            </div>
+            <div class="menu-item menu-item--featured">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Biftek</p>
+                <p class="menu-item__desc">Klasični specijalitet u novom ruhu — cena po kg</p>
+                <span class="menu-item__badge">Preporučujemo</span>
+              </div>
+              <span class="menu-item__price">7.200 din/kg</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ćuretina u Pesta Sosu</p>
+              </div>
+              <span class="menu-item__price">1.450 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Bardirana Ćuretina</p>
+                <p class="menu-item__desc">U panceti (dimljenoj slanini)</p>
+              </div>
+              <span class="menu-item__price">1.650 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ćuretina u Paradajz Sosu</p>
+              </div>
+              <span class="menu-item__price">1.550 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ćuretina sa Sirom</p>
+                <p class="menu-item__desc">Sa 4 vrste sira i testom</p>
+              </div>
+              <span class="menu-item__price">1.550 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ćuretina sa Mlincima</p>
+                <p class="menu-item__desc">Domaće tradicionalno</p>
+              </div>
+              <span class="menu-item__price">1.450 din</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ROŠTILJ -->
+        <section class="menu-category" id="rostilj" aria-labelledby="rostilj-title">
+          <div class="menu-category__header">
+            <div class="menu-category__icon" aria-hidden="true">🔥</div>
+            <div>
+              <h2 class="menu-category__title" id="rostilj-title">Roštilj Specijaliteti</h2>
+              <p class="menu-category__subtitle">Savršeni ukusi sa roštilja, pripremljeni s ljubavlju</p>
+            </div>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item menu-item--featured">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ćevapčići sa Lukom</p>
+                <span class="menu-item__badge">Preporučujemo</span>
+              </div>
+              <span class="menu-item__price">1.250 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ćevapčići — 1/2 porcije</p>
+              </div>
+              <span class="menu-item__price">850 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Pljeskavica na Žaru</p>
+              </div>
+              <span class="menu-item__price">1.250 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Pljeskavica — 1/2 porcije</p>
+              </div>
+              <span class="menu-item__price">850 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Punjena Pljeskavica</p>
+              </div>
+              <span class="menu-item__price">1.300 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Punjena Pljeskavica — 1/2 porcije</p>
+              </div>
+              <span class="menu-item__price">900 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Pljeskavica sa Užičkim Kajmakom</p>
+              </div>
+              <span class="menu-item__price">1.300 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Gurmanska Pljeskavica</p>
+              </div>
+              <span class="menu-item__price">1.300 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Punjena Pljeskavica na Užički Način</p>
+              </div>
+              <span class="menu-item__price">1.350 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ražnjići</p>
+              </div>
+              <span class="menu-item__price">1.250 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ražnjići — 1/2 porcije</p>
+              </div>
+              <span class="menu-item__price">850 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Punjeni Ražnjići</p>
+              </div>
+              <span class="menu-item__price">1.350 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Uštipci</p>
+              </div>
+              <span class="menu-item__price">1.300 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Uštipci — 1/2 porcije</p>
+              </div>
+              <span class="menu-item__price">900 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Leskovački Uštipci</p>
+              </div>
+              <span class="menu-item__price">1.350 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Bela Vešalica na Žaru</p>
+              </div>
+              <span class="menu-item__price">1.350 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Bela Vešalica — 1/2 porcije</p>
+              </div>
+              <span class="menu-item__price">850 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Punjena Vešalica</p>
+              </div>
+              <span class="menu-item__price">1.400 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Kobasica na Žaru</p>
+              </div>
+              <span class="menu-item__price">1.200 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Kobasica — 1/2 porcije</p>
+              </div>
+              <span class="menu-item__price">800 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Sveži Vrat na Žaru</p>
+              </div>
+              <span class="menu-item__price">1.350 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Sveži Vrat — 1/2 porcije</p>
+              </div>
+              <span class="menu-item__price">850 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Slanina na Žaru</p>
+              </div>
+              <span class="menu-item__price">1.250 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Slanina — 1/2 porcije</p>
+              </div>
+              <span class="menu-item__price">850 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Pileće Belo Meso u Slanini</p>
+              </div>
+              <span class="menu-item__price">1.200 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Pileće Belo Meso u Slanini — 1/2</p>
+              </div>
+              <span class="menu-item__price">850 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Pletenica</p>
+              </div>
+              <span class="menu-item__price">1.350 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Leskovački Voz</p>
+              </div>
+              <span class="menu-item__price">1.300 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Mešano Meso na Žaru</p>
+              </div>
+              <span class="menu-item__price">1.800 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Dimljeni Vrat na Žaru (1 kg)</p>
+              </div>
+              <span class="menu-item__price">3.700 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Dimljena Vešalica na Žaru (1 kg)</p>
+              </div>
+              <span class="menu-item__price">3.700 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Dimljena Vešalica — 1/2 porcije</p>
+              </div>
+              <span class="menu-item__price">900 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Punjena Dimljena Vešalica (1 kg)</p>
+              </div>
+              <span class="menu-item__price">4.100 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Pileći Bataci i Belo Meso na Žaru (1 kg)</p>
+              </div>
+              <span class="menu-item__price">3.500 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Punjeno Pileće Meso (1 kg)</p>
+              </div>
+              <span class="menu-item__price">3.700 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Extra Piletina (1 kg)</p>
+                <p class="menu-item__desc">Prilog i preliv od šampinjona</p>
+              </div>
+              <span class="menu-item__price">3.700 din</span>
+            </div>
+            <div class="menu-item menu-item--featured">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Biftek (1 kg)</p>
+                <span class="menu-item__badge">Specijalitet</span>
+              </div>
+              <span class="menu-item__price">7.200 din</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- EXTRA SPECIJALITETI -->
+        <section class="menu-category" id="extra" aria-labelledby="extra-title">
+          <div class="menu-category__header">
+            <div class="menu-category__icon" aria-hidden="true">🌍</div>
+            <div>
+              <h2 class="menu-category__title" id="extra-title">Extra Specijaliteti</h2>
+              <p class="menu-category__subtitle">Kulinarsko putovanje oko sveta</p>
+            </div>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Gurmanski Ravangradski Mix</p>
+                <p class="menu-item__desc">Grilovano i preliveno</p>
+              </div>
+              <span class="menu-item__price">1.350 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Marinirani Kotlet</p>
+              </div>
+              <span class="menu-item__price">1.280 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Royal Steak</p>
+                <p class="menu-item__desc">Sa šampinjonima</p>
+              </div>
+              <span class="menu-item__price">1.450 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Svinjski File u Voku</p>
+                <p class="menu-item__desc">Sa šampinjonima — azijska kuhinja</p>
+              </div>
+              <span class="menu-item__price">1.400 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Piletina sa Kikirikijem</p>
+                <p class="menu-item__desc">U voku sa povrćem</p>
+              </div>
+              <span class="menu-item__price">1.200 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Svinjetina na Rezance</p>
+                <p class="menu-item__desc">U voku sa povrćem</p>
+              </div>
+              <span class="menu-item__price">1.400 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Piletina Gorgonzola</p>
+                <p class="menu-item__desc">Preliveno i zapečeno — cena po kg</p>
+              </div>
+              <span class="menu-item__price">4.000 din/kg</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Zapečena Piletina</p>
+                <p class="menu-item__desc">Preliveno, zapečeno, uz rukolu — cena po kg</p>
+              </div>
+              <span class="menu-item__price">4.000 din/kg</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Biftek na Listiće</p>
+                <p class="menu-item__desc">U voku sa povrćem</p>
+              </div>
+              <span class="menu-item__price">1.600 din</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- SALATE I PRILOZI -->
+        <section class="menu-category" id="salate" aria-labelledby="salate-title">
+          <div class="menu-category__header">
+            <div class="menu-category__icon" aria-hidden="true">🥬</div>
+            <div>
+              <h2 class="menu-category__title" id="salate-title">Salate i Prilozi</h2>
+              <p class="menu-category__subtitle">Savršeni prilozi svakom obroku</p>
+            </div>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item menu-item--featured">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Cezar Salata</p>
+                <span class="menu-item__badge">Preporučujemo</span>
+              </div>
+              <span class="menu-item__price">900 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Salata sa Piletinom</p>
+              </div>
+              <span class="menu-item__price">900 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Salata sa Junetinom</p>
+              </div>
+              <span class="menu-item__price">1.050 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Salata sa Brusnicom i Orasima</p>
+              </div>
+              <span class="menu-item__price">1.050 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Vitaminska Salata</p>
+              </div>
+              <span class="menu-item__price">350 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Paradajz</p>
+              </div>
+              <span class="menu-item__price">350 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Krastavci Sveži</p>
+              </div>
+              <span class="menu-item__price">350 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Kupus Sveži</p>
+              </div>
+              <span class="menu-item__price">320 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Kupus Kiseli</p>
+              </div>
+              <span class="menu-item__price">320 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Krastavci Kiseli</p>
+              </div>
+              <span class="menu-item__price">320 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Srpska Salata</p>
+              </div>
+              <span class="menu-item__price">350 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Šopska Salata</p>
+              </div>
+              <span class="menu-item__price">410 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Zelena Salata</p>
+              </div>
+              <span class="menu-item__price">330 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Šargarepa</p>
+              </div>
+              <span class="menu-item__price">340 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ljuta Papričica</p>
+              </div>
+              <span class="menu-item__price">180 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Urnebes Salata</p>
+              </div>
+              <span class="menu-item__price">590 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Začinjeni Krompir</p>
+                <p class="menu-item__desc">Prilog</p>
+              </div>
+              <span class="menu-item__price">380 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Pomfrit</p>
+                <p class="menu-item__desc">Prilog</p>
+              </div>
+              <span class="menu-item__price">380 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Šampinjoni</p>
+                <p class="menu-item__desc">Prilog</p>
+              </div>
+              <span class="menu-item__price">380 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Grašak</p>
+                <p class="menu-item__desc">Prilog</p>
+              </div>
+              <span class="menu-item__price">340 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ajvar Domaći</p>
+              </div>
+              <span class="menu-item__price">470 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Pirinač</p>
+                <p class="menu-item__desc">Prilog</p>
+              </div>
+              <span class="menu-item__price">240 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Gljive na Žaru</p>
+                <p class="menu-item__desc">Prilog</p>
+              </div>
+              <span class="menu-item__price">480 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Paprika Pečena</p>
+              </div>
+              <span class="menu-item__price">470 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Paprika Pečena Ljuta</p>
+              </div>
+              <span class="menu-item__price">300 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Grilovano Povrće</p>
+              </div>
+              <span class="menu-item__price">530 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Hleb — parče</p>
+              </div>
+              <span class="menu-item__price">60 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Lepinja</p>
+              </div>
+              <span class="menu-item__price">100 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Trapist</p>
+                <p class="menu-item__desc">Sir</p>
+              </div>
+              <span class="menu-item__price">700 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Feta</p>
+                <p class="menu-item__desc">Sir</p>
+              </div>
+              <span class="menu-item__price">700 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Užički Kajmak</p>
+              </div>
+              <span class="menu-item__price">700 din</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- DESERTI -->
+        <section class="menu-category" id="deserti" aria-labelledby="deserti-title">
+          <div class="menu-category__header">
+            <div class="menu-category__icon" aria-hidden="true">🍮</div>
+            <div>
+              <h2 class="menu-category__title" id="deserti-title">Deserti</h2>
+              <p class="menu-category__subtitle">Slatki zalogaji za savršen završetak svakog obroka</p>
+            </div>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item menu-item--featured">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Čokoladni Kolač</p>
+                <p class="menu-item__desc">Preliv od malina</p>
+                <span class="menu-item__badge">Preporučujemo</span>
+              </div>
+              <span class="menu-item__price">450 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Monte Cheesecake</p>
+              </div>
+              <span class="menu-item__price">450 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Palačinke sa Sladoledom</p>
+                <p class="menu-item__desc">Preliv od višanja</p>
+              </div>
+              <span class="menu-item__price">500 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Tiramisu</p>
+              </div>
+              <span class="menu-item__price">520 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Pohovana Banana</p>
+              </div>
+              <span class="menu-item__price">500 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Krempita</p>
+              </div>
+              <span class="menu-item__price">450 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Sladoled</p>
+              </div>
+              <span class="menu-item__price">480 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Voćni Kup</p>
+              </div>
+              <span class="menu-item__price">500 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Palačinke</p>
+              </div>
+              <span class="menu-item__price">450 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Njoke sa Makom</p>
+              </div>
+              <span class="menu-item__price">550 din</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- KARTA PIĆA -->
+        <section class="menu-category" id="pica" aria-labelledby="pica-title">
+          <div class="menu-category__header">
+            <div class="menu-category__icon" aria-hidden="true">🍺</div>
+            <div>
+              <h2 class="menu-category__title" id="pica-title">Karta Pića</h2>
+              <p class="menu-category__subtitle">Užitak u svakom gutljaju</p>
+            </div>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Coca-Cola 0,25l</p>
+              </div>
+              <span class="menu-item__price">250 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Schweppes 0,25l</p>
+              </div>
+              <span class="menu-item__price">250 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Tonik 0,25l</p>
+              </div>
+              <span class="menu-item__price">250 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Fanta 0,25l</p>
+              </div>
+              <span class="menu-item__price">250 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Sprite 0,25l</p>
+              </div>
+              <span class="menu-item__price">250 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Cocta 0,25l</p>
+              </div>
+              <span class="menu-item__price">250 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Sokovi (0,2l) — Borovnica / Jabuka / Breskva / Jagoda / Dunja / Multivitamin</p>
+              </div>
+              <span class="menu-item__price">260 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ledeni Čaj 0,2l</p>
+              </div>
+              <span class="menu-item__price">260 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Guarana 0,2l</p>
+              </div>
+              <span class="menu-item__price">350 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Cedevita</p>
+              </div>
+              <span class="menu-item__price">260 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Limunada 0,2l</p>
+              </div>
+              <span class="menu-item__price">250 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Knjaz Miloš 1l</p>
+              </div>
+              <span class="menu-item__price">380 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Knjaz Miloš 0,33l</p>
+              </div>
+              <span class="menu-item__price">220 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Voda Vrnjci / Aqua Viva / Rosa 1l</p>
+              </div>
+              <span class="menu-item__price">380 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Rosa 0,33l</p>
+              </div>
+              <span class="menu-item__price">220 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Crna Kafa</p>
+              </div>
+              <span class="menu-item__price">170 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Espresso</p>
+              </div>
+              <span class="menu-item__price">180 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Espresso sa Mlekom</p>
+              </div>
+              <span class="menu-item__price">210 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Espresso sa Šlagom</p>
+              </div>
+              <span class="menu-item__price">210 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Cappuccino</p>
+              </div>
+              <span class="menu-item__price">230 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ness Caffe</p>
+              </div>
+              <span class="menu-item__price">230 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Čaj sa Limunom</p>
+              </div>
+              <span class="menu-item__price">220 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Čaj sa Medom</p>
+              </div>
+              <span class="menu-item__price">270 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Jelen Pivo 0,5l — Apatin</p>
+              </div>
+              <span class="menu-item__price">270 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Jelen Pivo 0,33l — Apatin</p>
+              </div>
+              <span class="menu-item__price">270 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Jelen Fresh Grejp 0,33l</p>
+              </div>
+              <span class="menu-item__price">300 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Lav Premium 0,33l</p>
+              </div>
+              <span class="menu-item__price">300 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Staropramen 0,33l</p>
+              </div>
+              <span class="menu-item__price">340 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Amstel 0,33l</p>
+              </div>
+              <span class="menu-item__price">370 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Heineken 0,25l</p>
+              </div>
+              <span class="menu-item__price">370 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Tuborg 0,33l</p>
+              </div>
+              <span class="menu-item__price">320 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Nikšićko Crno 0,33l</p>
+              </div>
+              <span class="menu-item__price">340 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Bavaria Bezalkoholno 0,33l</p>
+              </div>
+              <span class="menu-item__price">320 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Johnnie Walker 0,03l</p>
+              </div>
+              <span class="menu-item__price">370 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ballantines 0,03l</p>
+              </div>
+              <span class="menu-item__price">370 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Chivas Regal 0,03l</p>
+              </div>
+              <span class="menu-item__price">460 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Jack Daniels 0,03l</p>
+              </div>
+              <span class="menu-item__price">460 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Tequila 0,03l</p>
+              </div>
+              <span class="menu-item__price">370 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Gin 0,03l</p>
+              </div>
+              <span class="menu-item__price">230 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Metaxa 0,03l</p>
+              </div>
+              <span class="menu-item__price">370 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Stari Brandy 0,03l</p>
+              </div>
+              <span class="menu-item__price">230 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Martini 0,10l</p>
+              </div>
+              <span class="menu-item__price">420 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Vermut Domaći 0,10l</p>
+              </div>
+              <span class="menu-item__price">260 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Campari 0,03l</p>
+              </div>
+              <span class="menu-item__price">280 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Jägermeister 0,03l</p>
+              </div>
+              <span class="menu-item__price">320 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Gorki List 0,03l</p>
+              </div>
+              <span class="menu-item__price">240 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Votka Domaća 0,03l</p>
+              </div>
+              <span class="menu-item__price">240 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Štok 0,03l</p>
+              </div>
+              <span class="menu-item__price">280 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Konjak Badel 0,03l</p>
+              </div>
+              <span class="menu-item__price">240 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Vinjak 5 0,03l</p>
+              </div>
+              <span class="menu-item__price">310 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Napoleon Konjak 0,03l</p>
+              </div>
+              <span class="menu-item__price">240 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Sokolova Rakija 0,03l</p>
+              </div>
+              <span class="menu-item__price">320 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Vinjak Rubin 0,03l</p>
+              </div>
+              <span class="menu-item__price">240 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Zlatna Viljamovka 0,03l</p>
+              </div>
+              <span class="menu-item__price">320 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Dunja Viktorija 0,03l</p>
+              </div>
+              <span class="menu-item__price">320 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Kajsija Viktorija 0,03l</p>
+              </div>
+              <span class="menu-item__price">320 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Viljamovka Stara Pesma 0,03l</p>
+              </div>
+              <span class="menu-item__price">330 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Kajsija Stara Pesma 0,03l</p>
+              </div>
+              <span class="menu-item__price">320 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Dunja Stara Pesma 0,03l</p>
+              </div>
+              <span class="menu-item__price">320 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Žuta Osa 0,03l</p>
+              </div>
+              <span class="menu-item__price">320 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Kruna 0,03l</p>
+              </div>
+              <span class="menu-item__price">320 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Loza "13. jul" 0,03l</p>
+              </div>
+              <span class="menu-item__price">240 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Rum 0,03l</p>
+              </div>
+              <span class="menu-item__price">230 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Baccardi 0,03l</p>
+              </div>
+              <span class="menu-item__price">330 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Bailey's 0,03l</p>
+              </div>
+              <span class="menu-item__price">460 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Likeri — Kruškovac / Čokoladni / Sherry Brandy (0,03l)</p>
+              </div>
+              <span class="menu-item__price">230 din</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- VINSKA LISTA -->
+        <section class="menu-category" id="vina" aria-labelledby="vina-title">
+          <div class="menu-category__header">
+            <div class="menu-category__icon" aria-hidden="true">🍷</div>
+            <div>
+              <h2 class="menu-category__title" id="vina-title">Vinska Lista</h2>
+              <p class="menu-category__subtitle">Vrhunska vinska selekcija za istinske ljubitelje vina</p>
+            </div>
+          </div>
+          <div class="menu-items">
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Graševina Stobi 1/1</p>
+              </div>
+              <span class="menu-item__price">1.500 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Smederevka 1/1</p>
+              </div>
+              <span class="menu-item__price">1.500 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Krstač "13 Jul" 1/1</p>
+              </div>
+              <span class="menu-item__price">1.500 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Ždrepčeva Krv 1/1</p>
+              </div>
+              <span class="menu-item__price">1.600 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Vranac "13 Jul" 1/1</p>
+              </div>
+              <span class="menu-item__price">1.600 din</span>
+            </div>
+            <div class="menu-item menu-item--featured">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Trijumf Aleksandrović 0,75l</p>
+                <span class="menu-item__badge">Preporučujemo</span>
+              </div>
+              <span class="menu-item__price">3.900 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Harizma 0,75l</p>
+              </div>
+              <span class="menu-item__price">3.500 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Tamnjanika Spasić 0,75l</p>
+              </div>
+              <span class="menu-item__price">2.900 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Sauvignon Radovanović 0,75l</p>
+              </div>
+              <span class="menu-item__price">3.100 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Chardonnay Radovanović 0,75l</p>
+              </div>
+              <span class="menu-item__price">3.100 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Chardonnay Kovačević 0,75l</p>
+              </div>
+              <span class="menu-item__price">3.100 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Chardonnay Barik Plantaže 0,75l</p>
+              </div>
+              <span class="menu-item__price">3.300 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Triumf Gold 0,75l</p>
+              </div>
+              <span class="menu-item__price">4.100 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Chardonnay Pro Anima 0,75l</p>
+              </div>
+              <span class="menu-item__price">2.900 din</span>
+            </div>
+            <div class="menu-item menu-item--featured">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Vranac "Pro Corde" 0,75l</p>
+                <span class="menu-item__badge">Preporučujemo</span>
+              </div>
+              <span class="menu-item__price">2.900 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Cabernet Sauvignon Radovanović 0,75l</p>
+              </div>
+              <span class="menu-item__price">3.100 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Cabernet Reserve Radovanović 0,75l</p>
+              </div>
+              <span class="menu-item__price">4.600 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Vladika Plantaže 0,75l</p>
+              </div>
+              <span class="menu-item__price">3.500 din</span>
+            </div>
+            <div class="menu-item menu-item--featured">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Stari Podrum Plantaže 0,75l</p>
+                <span class="menu-item__badge">Premium</span>
+              </div>
+              <span class="menu-item__price">9.600 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Probus 276 Deurić 0,75l</p>
+              </div>
+              <span class="menu-item__price">3.100 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Aurelius Kovačević 0,75l</p>
+              </div>
+              <span class="menu-item__price">3.300 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Merlot Deurić 0,75l</p>
+              </div>
+              <span class="menu-item__price">3.100 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Atos Aksiom 0,75l</p>
+              </div>
+              <span class="menu-item__price">3.800 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Vranac Reserve 0,75l</p>
+              </div>
+              <span class="menu-item__price">4.400 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Severna Morava Deurić 0,75l</p>
+              </div>
+              <span class="menu-item__price">3.100 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Penušava Vina 0,75l</p>
+              </div>
+              <span class="menu-item__price">2.900 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Rose Radovanović 0,15l</p>
+              </div>
+              <span class="menu-item__price">570 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Roseto Kovačević 0,15l</p>
+              </div>
+              <span class="menu-item__price">570 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Somersby 0,33l</p>
+              </div>
+              <span class="menu-item__price">500 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Kupinovo Vino</p>
+              </div>
+              <span class="menu-item__price">500 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Sangria</p>
+              </div>
+              <span class="menu-item__price">500 din</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item__info">
+                <p class="menu-item__name">Vina 0,187l</p>
+              </div>
+              <span class="menu-item__price">500 din</span>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER (skraćen) -->
+  <footer class="footer" role="contentinfo">
+    <svg class="footer__wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#1A1008"/>
+    </svg>
+    <div class="footer__inner">
+      <a href="index.html" class="footer__logo" aria-label="Restoran Slon — Početna">
+        <span class="footer__logo-text">Slon</span>
+      </a>
+      <nav class="footer__nav" aria-label="Footer navigacija">
+        <a href="index.html" class="footer__link">Početna</a>
+        <a href="index.html#o-nama" class="footer__link">O Nama</a>
+        <a href="index.html#rezervacije" class="footer__link">Rezervacije</a>
+        <a href="index.html#kontakt" class="footer__link">Kontakt</a>
+      </nav>
+      <div class="footer__divider" aria-hidden="true"></div>
+      <p class="footer__copy">&copy; 2025 Restoran Slon &bull; Venac Petrove Gore bb, 25000 Sombor</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>
