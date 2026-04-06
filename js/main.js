@@ -135,22 +135,24 @@
   // ============================================================
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  const lightboxCounter = document.getElementById('lightbox-counter');
   const lightboxClose = document.getElementById('lightbox-close');
   const lightboxPrev = document.getElementById('lightbox-prev');
   const lightboxNext = document.getElementById('lightbox-next');
 
-  const galleryItems = document.querySelectorAll('[data-lightbox]');
+  const galleryItems = document.querySelectorAll('.gallery__item[data-lightbox]');
   const galleryImages = [];
   let currentLightboxIndex = 0;
 
   galleryItems.forEach((item, i) => {
     const img = item.querySelector('img');
     if (img) {
-      galleryImages.push({ src: img.src, alt: img.alt });
+      galleryImages.push({ src: img.src || img.getAttribute('src'), alt: img.getAttribute('alt') || '' });
+      item.style.cursor = 'pointer';
       item.addEventListener('click', () => openLightbox(i));
       item.setAttribute('tabindex', '0');
-      item.setAttribute('role', 'button');
-      item.setAttribute('aria-label', 'Otvori sliku: ' + img.alt);
+      item.setAttribute('aria-label', 'Otvori sliku: ' + (img.getAttribute('alt') || ''));
       item.addEventListener('keydown', e => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
@@ -162,7 +164,7 @@
 
   function openLightbox(index) {
     currentLightboxIndex = index;
-    showLightboxImage(index);
+    showLightboxImage(index, false);
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
     lightboxClose.focus();
@@ -173,21 +175,35 @@
     document.body.style.overflow = '';
   }
 
-  function showLightboxImage(index) {
+  function showLightboxImage(index, animate) {
     if (!galleryImages[index]) return;
-    lightboxImg.src = galleryImages[index].src;
-    lightboxImg.alt = galleryImages[index].alt;
     currentLightboxIndex = index;
+
+    if (animate) {
+      lightboxImg.classList.add('is-fading');
+      setTimeout(() => {
+        lightboxImg.src = galleryImages[index].src;
+        lightboxImg.alt = galleryImages[index].alt;
+        if (lightboxCaption) lightboxCaption.textContent = galleryImages[index].alt;
+        if (lightboxCounter) lightboxCounter.textContent = (index + 1) + ' / ' + galleryImages.length;
+        lightboxImg.classList.remove('is-fading');
+      }, 200);
+    } else {
+      lightboxImg.src = galleryImages[index].src;
+      lightboxImg.alt = galleryImages[index].alt;
+      if (lightboxCaption) lightboxCaption.textContent = galleryImages[index].alt;
+      if (lightboxCounter) lightboxCounter.textContent = (index + 1) + ' / ' + galleryImages.length;
+    }
   }
 
   function prevImage() {
     const newIndex = (currentLightboxIndex - 1 + galleryImages.length) % galleryImages.length;
-    showLightboxImage(newIndex);
+    showLightboxImage(newIndex, true);
   }
 
   function nextImage() {
     const newIndex = (currentLightboxIndex + 1) % galleryImages.length;
-    showLightboxImage(newIndex);
+    showLightboxImage(newIndex, true);
   }
 
   if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
@@ -208,6 +224,26 @@
     if (e.key === 'ArrowLeft') prevImage();
     if (e.key === 'ArrowRight') nextImage();
   });
+
+  // Touch / swipe podrška za mobilne
+  if (lightbox) {
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    lightbox.addEventListener('touchstart', e => {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    lightbox.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      const dy = e.changedTouches[0].clientY - touchStartY;
+      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 50) {
+        if (dx < 0) nextImage();
+        else prevImage();
+      }
+    }, { passive: true });
+  }
 
   // ============================================================
   // 6. REZERVACIJA FORMA

@@ -1068,11 +1068,43 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: all;
 }
 
+.lightbox__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  max-width: 90vw;
+}
+
 .lightbox__img {
   max-width: 90vw;
-  max-height: 90vh;
+  max-height: 80vh;
   object-fit: contain;
   border-radius: var(--radius-md);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.lightbox__img.is-fading {
+  opacity: 0;
+  transform: scale(0.97);
+}
+
+.lightbox__caption {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--text-sm);
+  text-align: center;
+  margin: 0;
+  min-height: 1.4em;
+}
+
+.lightbox__counter {
+  position: absolute;
+  bottom: var(--space-5);
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--text-sm);
+  letter-spacing: 0.05em;
 }
 
 .lightbox__close {
@@ -1092,7 +1124,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .lightbox__close:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 .lightbox__prev,
@@ -1117,7 +1149,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .lightbox__prev:hover,
 .lightbox__next:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 /* ============================================================
@@ -1860,6 +1892,16 @@ h1, h2, h3, h4, h5, h6 {
   .gallery__item--wide {
     grid-row: span 1;
     grid-column: span 1;
+  }
+
+  .lightbox__prev { left: var(--space-3); }
+  .lightbox__next { right: var(--space-3); }
+
+  .lightbox__prev,
+  .lightbox__next {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
   }
 
   .form__row {
