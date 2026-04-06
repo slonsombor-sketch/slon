@@ -349,6 +349,8 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: var(--space-3);
   text-decoration: none;
+  min-width: 0;
+  flex-shrink: 1;
 }
 
 .nav__logo-img {
@@ -457,6 +459,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 5px;
   padding: var(--space-2);
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .nav__hamburger span {
@@ -1725,6 +1728,8 @@ h1, h2, h3, h4, h5, h6 {
 
   .nav__logo-img {
     height: 44px;
+    max-width: 120px;
+    object-fit: contain;
   }
 
   .nav__social {
